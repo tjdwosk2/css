@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+.container {
+	display: grid;
+	/* 영역 설정 */
+	/* 	grid-template-columns : 100px 200px 100px;
+	grid-template-rows : 100px 200px 100px 200px; */
+	/* 반복적일때는   */
+	/* grid-template-columns : 100px 100px 100px 100px 100px; */
+	/* grid-template-columns : repeat(5,20%); */
+	/* 각각의 cell에 비율로 전체를 차지한다. */
+	/* grid-template-columns : 1fr 2fr 1fr; */
+	grid-template-columns: repeat(5, 1fr);
+	/* 1fr 을 5번 한거다 */
+	/* 비율을 균등하게 = 1fr ?fr frame인건가 이런 의미는 아닌듯 위를 보아하니 */
+	/* grid-template-columns : repeat(5,100px); */
+	/* px도 먹잖아?? */
+	/* grid-template-rows : 100px 200px 100px 200px; */
+	/* 자동으로 전체를 150px : 높이가 150을 넘으면 잘린다. 내용이. */
+	/* grid-auto-rows:150px; */
+	/* 최소한 150px, 넘으면 자동으로 다 보인다. */
+	grid-auto-rows: minmax(150px, auto);
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+	padding: 10px;
+}
+
+/* grid cell 합치기 */
+.item2 {
+	grid-column-start: 2;
+	grid-column-end: 5;
+}
+
+.item3 {
+	grid-row-start: 1;
+	grid-row-end: 4;
+}
+
+.item4 {
+	/* grid-column-start: 2;
+	grid-column-end: 6; */
+	/* grid-column:2/6; */
+	/* grid-column:2/-1; */
+	/* 위의 3가지 방법이 다 같다.  */
+
+	grid-column:2/-2;
+	
+	/* grid-row-start: 2;
+	grid-row-end: 4; */
+	/* grid-row:2/4; */
+	/* 위의 2가지 방법이 다 같다.  */
+	
+	grid-row:2/5;
+}

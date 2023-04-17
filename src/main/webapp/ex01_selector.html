@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>선택자</title>
+<style type="text/css">
+
+*{color: red;}
+	p {color: orange;}
+ 	#f_color{color: magenta;}
+ 	.fgcolor{color: blue;}
+ 
+</style>
+</head>
+<body>
+
+<!-- 
+			CSS문법 : 선택자 (selector) {속성(property):값; 속성:값....};
+			
+			전체 선택자 : * 
+			태그(요소) 선택자 : 태그 	
+			아이디 선택자 : #아이디(하나만 선택)
+			클래스 선택자 : .클래스 (여러개 선택)
+			
+			자식 선택자 : 부모선택자 자식선택자
+			자손 선택자 : 부모선택자 >자식선택자
+			
+			
+			속성 선택자 : 선택자[속성=값] => 해당 속성과 일치
+							    선택자[속성^=값] => 속성이~로 시작하는 
+							    선택자[속성*=값] => 속성이~을 포함하는
+							    선택자[속성*=값] => 속성이~로 끝나는
+							    
+			 
+							    
+			구조 선택자 : 선택자 : first
+								선택자 : last
+								선택자 : even
+								선택자 : odd
+			
+			
+			
+			
+			**  우선 순위
+			아이디 > 클래스 > 태그
+ 
+ -->
+ 
+ <h1>CCS 연습</h1>
+ <p> CSS 선택자 연습</p>
+ <p> CSS 선택자 연습</p>
+  <p class="fgcolor"> CSS 선택자 연습</p>
+  <p> CSS 선택자 연습</p>
+ <p id ="f_color" class="fgcolor"> CSS 선택자 연습</p>
+ <p> CSS 선택자 연습</p>
+
+</body>
+</html>

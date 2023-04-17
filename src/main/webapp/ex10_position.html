@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>position 속성 : 위치 속성</title>
+<style type="text/css">
+div {
+	width: 200px;
+	height: 200px;
+	border: 1px solid black;
+	margin: 10px 5px;
+	padding: 5px;
+}
+
+#con1 {
+	position: static; /*문서의 흐름에 거슬리지 않게, 다른요소와 겹치지 않게 */
+	left: 10px;
+	top: 10px;
+	background-color: yellow;
+}
+
+#con2 {
+	position: relative;	/* 원래 위치에서 이동 */
+	background-color: olive;
+	left: 100px;
+	top: 100px;
+}
+
+#con3 {
+	position: absolute; /*부모자리에서 이동*/
+	background-color: red;
+	left: 100px;
+	top: 100px;
+}
+
+#con4 {
+	position: fixed;	 /* window 안에서 이동*/
+	background-color: pink;
+	left: 100px;
+	top: 100px;
+}
+
+#con5 {
+	position: sticky;	 /*  스크롤 되어도 해당 지역을 지킨다 .*/
+	background-color: blue;
+	left: 100px;
+	top: 100px;
+}
+</style>
+</head>
+<body>
+
+		<!--
+			
+		position 은 위치지정 속성
+		static : 기본값 , 문서의 흐름에 거스리지 않음 , 다른 요소와 겹치지 않게
+				  top, bottom , left , right 속성에 영향을 받지 않는다 .
+		relative  : 원래 위치에서 이동
+		absolute: 부모 자리에서 이동
+		fixed    :  고정 , 화면을 기준으로 절대 위치 좌표 설정
+		sticky : 스크롤 되어도 해당 자리를 지킨다 .
+		
+		
+		
+		  -->
+
+	<div id="con1">position 속성 : 위치속성을 말한다. : position 속성 : 위치속성을 말한다</div>
+	<div>position 속성 : 위치속성을 말한다. : position 속성 : 위치속성을 말한다</div>
+	<div id="con2">position 속성 : 위치속성을 말한다. : position 속성 : 위치속성을 말한다</div>
+	<div>position 속성 : 위치속성을 말한다. : position 속성 : 위치속성을 말한다</div>
+	<div id="con3">position 속성 : 위치속성을 말한다. : position 속성 : 위치속성을 말한다</div>
+	<div>position 속성 : 위치속성을 말한다. : position 속성 : 위치속성을 말한다</div>
+	<div id="con4">position 속성 : 위치속성을 말한다. : position 속성 : 위치속성을 말한다</div>
+	<div>position 속성 : 위치속성을 말한다. : position 속성 : 위치속성을 말한다</div>
+	<div id="con5">position 속성 : 위치속성을 말한다. : position 속성 : 위치속성을 말한다</div>
+	<div>position 속성 : 위치속성을 말한다. : position 속성 : 위치속성을 말한다</div>
+	<div>position 속성 : 위치속성을 말한다. : position 속성 : 위치속성을 말한다</div>
+	<div>position 속성 : 위치속성을 말한다. : position 속성 : 위치속성을 말한다</div>
+	<div>position 속성 : 위치속성을 말한다. : position 속성 : 위치속성을 말한다</div>
+	<div>position 속성 : 위치속성을 말한다. : position 속성 : 위치속성을 말한다</div>
+	
+</body>
+</html>

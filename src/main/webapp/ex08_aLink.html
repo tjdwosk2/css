@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> a 링크로 메뉴 만들기</title>
+<style type="text/css">
+	a:link, a:visited{
+		background-color: pink;
+		color: white;
+		padding: 14px 25px;
+		text-decoration: none;
+		display: none;
+		display: inline;
+		display: block;
+		display: inline-block;  
+	}
+	a:hover, a:active{
+		background-color: skyblue;
+		font-size: 1.5em;
+	}
+</style>
+</head>
+<body>
+<!--
+    의사 클래스
+	a 링크 밑줄 지우기 : text-decoration:none;
+	a:link     : 방문 전 링크 상태
+	a:visited  : 방문 후 링크 상태
+	a:active   : 클릭했을 때 
+	a:hover    : 마우스포인터가 오버 했을 때 
+  -->
+  <a href="#"> This is a link1 </a>
+  <a href="#"> This is a link2 </a>
+  <a href="#"> This is a link3 </a>
+  <a href="#"> This is a link4 </a>
+  <hr>
+   여기는 본문 입니다.
+</body>
+</html>

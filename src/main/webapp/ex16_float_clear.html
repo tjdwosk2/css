@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>float 속성을 이용한 레이아웃 구성</title>
+<style type="text/css">
+	body {
+		width: 960px;
+		margin: 0 auto; /* 상하 좌우 좌우가 auto니까 body의 좌우만 가운데 정렬 */
+	}
+	#section1{
+		width: 760px;
+		float: left;
+	}
+	#aside{
+		width: 200px;
+		float: left;
+	}
+	/* float:left 속성 삭제  */
+	/* #footer{
+		clear:left;
+		background-color: gray;
+	} */
+	
+	/* clear와 비슷한 기능 */
+	#wrap{overflow: hidden;}
+	
+	
+	
+</style>
+</head>
+<body>
+	<div id="header"><h1>Header</h1>
+	</div><div id="navi"><h1>Navigation</h1>
+	</div>
+		<div id="wrap">
+			<div id="section1">
+				<div class="article"><h1>article-1</h1>
+					<p> You can use the overflow property when you want to have better 
+					     control of the layout. The overflow property specifies what 
+    					 happens if content overflows an element's box.
+					</p>
+				</div>
+				<div class="article"><h1>article-2</h1>
+					<p> You can use the overflow property when you want to have better 
+					     control of the layout. The overflow property specifies what 
+    					 happens if content overflows an element's box.
+					</p>
+				</div>
+				<div class="article"><h1>article-3</h1>
+					<p> You can use the overflow property when you want to have better 
+					     control of the layout. The overflow property specifies what 
+    					 happens if content overflows an element's box.
+					</p>
+				</div>
+				<div class="article"><h1>article-4</h1>
+					<p> You can use the overflow property when you want to have better 
+					     control of the layout. The overflow property specifies what 
+    					 happens if content overflows an element's box.
+					</p>
+				</div>
+			</div> <!-- wrap 끝 -->
+			<div id="aside"><h1>aside</h1>
+				<p> You can use the overflow property when you want to have better 
+					     control of the layout. The overflow property specifies what 
+    					 happens if content overflows an element's box.
+				</p>
+			</div>
+		</div>
+		<div id="footer"><h1>footer</h1></div>
+</body>
+</html>

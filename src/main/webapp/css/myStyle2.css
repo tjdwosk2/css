@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+div#popup{
+		
+		width: 500px;
+		height: 300px;
+		position: absolute;
+		top: 50px;
+		left: 0px;
+		overflow: hidden;
+	
+		/* 원래는 보이도록 하는 것이 정상 */
+		/*  지금은 안보이게 하자 */
+		
+	 /* 	display:  none; */
+
+}
+
+img {
+	position: absolute;
+	z-index: -1
+	
+}
+h2 {
+	position:  absolute;
+	top:10px;
+	left: 100px;
+		
+}
+p {
+ 		width: 450px;
+ 		position: absolute;
+ 		top: 80px;
+ 		left: 20px;
+ 		color: gray;
+ 		font-weight: bold;
+}
+
+div#bar{
+	
+	width:  100%;
+	height:  20px;
+	border-bottom:  1px solid white;
+	background-color: #0066aa;
+	text-align: right;
+}
+div#exit_area{
+	
+	position: fixed;
+	top : 350px;
+	left: 430px;
+	
+	
+}

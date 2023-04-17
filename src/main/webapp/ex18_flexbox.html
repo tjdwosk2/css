@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FlexBox</title>
+<style type="text/css">
+	/* html, body{height: 100%} */
+
+	.container{
+		background: lightyellow;
+		/* height: 100% */ /* 지정안됨 (body, html를 100% 지정해야 됨) */
+		height: 100vh; /* vw, vh => 뷰포트, 화면을 100으로 보고 실행 */
+		
+		/* flexbox 에서 제일 먼저 할것 */
+		display : flex; /* 니영역은 flex박스야  */
+		
+		/* 왼쪽에서 오른쪽 */
+		flex-direction: row;
+		
+		/* 오른쪽에서 왼쪽 */
+		flex-direction: row-reverse;
+
+		/* 위에서 아래로 */
+		flex-direction: column;
+
+		/* 아래에서 위로 */
+		flex-direction: column-reverse;
+		
+		flex-direction: row;
+		flex-wrap: nowrap; /* 기본값 : 한줄만 가지고 있다. */		
+		flex-wrap: wrap;   /* 자동으로 줄바꿈 */
+		
+		/* 아이템을 배치 : 중심축에 배치  */
+		justify-content: flex-start; /* 왼쪽 상단에서 시작  */
+		justify-content: flex-end;	 /* 오른쪽 상단에서 시작  */
+		/* flex-direction이 row 일때랑 column 일때랑 다르겠죠??  */
+		justify-content: space-around; /* 양 끝 여백이 존재  */
+		justify-content: space-between; /* 양 끝 여백 미존재, 그래서 양 끝 값과 사이값 차이가 있음 */
+		justify-content: space-evenly; /* 모든 여백 값 통일 */
+		align-items: center;
+
+	}
+	.item{
+		width: 40px;
+		height: 40px;
+		text-align: center;
+		/* 줄 높이를 일치 시킨다.  */
+		line-height: 40px;
+		/* display: table-cell; */
+		/* align-items: center; */
+
+		
+	} 
+	.item1{background-color: #ef9a9a}
+	.item2{background-color: #ff9a9a}
+	.item3{background-color: #af9a9a}
+	.item4{background-color: #bf9a9a}
+	.item5{background-color: #cf9a9a}
+	.item6{background-color: #ef8a9a}
+	.item7{background-color: #ef7a9a}
+	.item8{background-color: #ef6a9a}
+	.item9{background-color: #ef5a9a}
+	.item10{background-color: #ef4a9a}
+</style>
+</head>
+<body>
+<!--
+	컨테이너의 속성값(컨테이너는 포함하는거)
+		: display, felx-direction, flex-wrap
+		  felx-flow, justify-content,
+		  align-items, align-content
+	아이템의 속성값(하나하나의 값)
+		: order, flex-grow, flex-shrink, align-self
+	
+	중심축과 반대축이 존재한다.
+	왼쪽에서 오른쪽 = 수평축이 중심축라고 배웠으나
+	위에서 아래    = 수직축이 중심축
+	... 흠 ... 개념과 반대로 쓰는군
+  -->
+  
+  <div class="container">
+  	<div class="item item1">1</div> <!-- item time1 은 각각 클래스이다.  -->
+  	<div class="item item2">2</div>
+  	<div class="item item3">3</div>
+  	<div class="item item4">4</div>
+  	<div class="item item5">5</div>
+  	<div class="item item6">6</div>
+  	<div class="item item7">7</div>
+  	<div class="item item8">8</div>
+  	<div class="item item9">9</div>
+  	<div class="item item10">10</div>
+  	<div class="item item1">1</div> <!-- item time1 은 각각 클래스이다.  -->
+  	<div class="item item2">2</div>
+  	<div class="item item3">3</div>
+  	<div class="item item4">4</div>
+  	<div class="item item5">5</div>
+  	<div class="item item6">6</div>
+  	<div class="item item7">7</div>
+  	<div class="item item8">8</div>
+  	<div class="item item9">9</div>
+  	<div class="item item10">10</div>
+  </div>
+  
+  
+  
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>padding 안쪽여백</title>
+<style type="text/css">
+   /* margin과 같은 방식*/
+   div{padding: 30px; border: 5px solid black; width: 400px}
+   div.mydiv1{width: 470px; padding: 50px; background: orange; 
+   box-sizing: border-box;}
+   /* width를 주고 padding를 주면 당연히 더 늘어난다 
+      이때, width의 크기를 변화 시키지 않으면 
+      box-sizing:border-box; 
+   */
+   div#mydiv2{width: 470px; padding: 50px; background: silver;
+   box-sizing: border-box;}
+</style>
+</head>
+<body>
+      <h2> padding 연습 </h2>
+   <div > padding 연습 padding 연습 padding 연습</div>
+   <div class="mydiv1"> padding 연습 padding 연습 padding 연습</div>
+   <div id="mydiv2"> padding 연습 padding 연습 padding 연습</div>
+   <div> padding 연습 padding 연습 padding 연습</div>
+   
+</body>
+</html>
